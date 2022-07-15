@@ -1,0 +1,25 @@
+.swimming div{
+   
+    width: 200px;
+    margin: 10px;
+   
+
+}
+
+#ring{
+    position: relative;
+    z-index: 10;
+ 
+}
+
+#water{
+    position: relative;
+    top: -85px;
+    z-index: 5;
+}
+
+#boy{
+    position: relative;
+    top: 79px;
+    z-index: 20;
+}
