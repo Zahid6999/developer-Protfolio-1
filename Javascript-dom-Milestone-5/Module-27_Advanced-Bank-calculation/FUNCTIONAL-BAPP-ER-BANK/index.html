@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional baoper bank (Smart Baba.) </title>
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <header>
+    <h1 class="text-4xl font-bold text-center mt-5">Functional <span class="text-red-400"> 
+        Baper Bank  (Smart Baba.)</span></h1>
+   </header>
+    <main>
+        <section class="mt-28">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                <!-- card-1 -->
+                <div class="bg-yellow-500 rounded-2xl p-5">
+                    <h4 class="text-3xl text-center font-medium">Deposit</h4>
+                    <h2 class="text-5xl text-center mt-3 font-medium">$<span id="deposit-total">00</span></h2>
+                </div>
+                <!-- card-2 -->
+                <div class="bg-green-500 rounded-2xl p-5">
+                    <h4 class="text-3xl text-center font-medium">withdraw</h4>
+                    <h2 class="text-5xl text-center mt-3 font-medium">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <!-- card-2 -->
+                <div class="bg-violet-500 rounded-2xl p-5">
+                    <h4 class="text-3xl text-center font-medium">Balance</h4>
+                    <h2 class="text-5xl text-center mt-3 font-medium">$<span id="balance-total">1240</span></h2>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ======DeshBord section====== -->
+
+        <section>
+            <div class="grid grid-cols-2 gap-36 w-3/4 mx-auto mt-80"> 
+                <div class="bg-lime-500 p-10 rounded-lg">
+                    <h1 class="text-5xl font-semibold text-white">Please Deposit</h1>
+                    <input id="deposit-field" type="text" placeholder="$amount you want to deposit" class="w-8/12 h-12 rounded mt-6 ml-16 p-5 text-xl block">
+                    <button id="deposit-btn" class="bg-slate-700 px-8 py-2 rounded-lg text-2xl font-semibold text-white mt-8">Deposit</button>
+                </div>
+
+
+
+                <div class="bg-indigo-500 p-10 rounded-lg">
+                    <h1 class="text-5xl font-semibold text-white">Please Withdraw</h1>
+                    <input id="withdraw-field" type="text" placeholder="$amount you want to withdraw" class="w-8/12 h-12 rounded mt-6 ml-16 p-5 text-xl block">
+                    <button id="withdraw-btn" class="bg-slate-700 px-8 py-2 rounded-lg text-2xl font-semibold text-white mt-8">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="functional.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
